@@ -1,0 +1,28 @@
+{
+  "name": "mern_my_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milenaonmaui/mern_my_site.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Express",
+    "React",
+    "Nodejs"
+  ],
+  "author": "Milena Kari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/milenaonmaui/mern_my_site/issues"
+  },
+  "homepage": "https://github.com/milenaonmaui/mern_my_site#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
