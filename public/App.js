@@ -18,33 +18,89 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var HelloWorld =
+var NotesFilter =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(HelloWorld, _React$Component);
+  _inherits(NotesFilter, _React$Component);
 
-  function HelloWorld() {
-    _classCallCheck(this, HelloWorld);
+  function NotesFilter() {
+    _classCallCheck(this, NotesFilter);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(HelloWorld).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(NotesFilter).apply(this, arguments));
   }
 
-  _createClass(HelloWorld, [{
+  _createClass(NotesFilter, [{
     key: "render",
     value: function render() {
-      var continents = ['Africa', 'America', 'Australia', 'New Zealand', 'Europe', 'Asia'];
-      var helloContinents = Array.from(continents, function (c) {
-        return "Hello, ".concat(c, "!");
-      });
-      var message = helloContinents.join(' ');
-      return React.createElement("div", {
-        title: "Outer div"
-      }, "\xA0", React.createElement("h2", null, "Using React"), "\xA0\xA0\xA0", React.createElement("h1", null, message), "\xA0\xA0");
+      return React.createElement("div", null, "This is a placeholder for the notes filter.");
     }
   }]);
 
-  return HelloWorld;
+  return NotesFilter;
 }(React.Component);
 
-var element = React.createElement(HelloWorld, null);
+var NotesTable =
+/*#__PURE__*/
+function (_React$Component2) {
+  _inherits(NotesTable, _React$Component2);
+
+  function NotesTable() {
+    _classCallCheck(this, NotesTable);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(NotesTable).apply(this, arguments));
+  }
+
+  _createClass(NotesTable, [{
+    key: "render",
+    value: function render() {
+      return React.createElement("div", null, "This is a placeholder for the notes table.");
+    }
+  }]);
+
+  return NotesTable;
+}(React.Component);
+
+var NotesAdd =
+/*#__PURE__*/
+function (_React$Component3) {
+  _inherits(NotesAdd, _React$Component3);
+
+  function NotesAdd() {
+    _classCallCheck(this, NotesAdd);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(NotesAdd).apply(this, arguments));
+  }
+
+  _createClass(NotesAdd, [{
+    key: "render",
+    value: function render() {
+      return React.createElement("div", null, "This is a placeholder for the notes add.");
+    }
+  }]);
+
+  return NotesAdd;
+}(React.Component);
+
+var NotesList =
+/*#__PURE__*/
+function (_React$Component4) {
+  _inherits(NotesList, _React$Component4);
+
+  function NotesList() {
+    _classCallCheck(this, NotesList);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(NotesList).apply(this, arguments));
+  }
+
+  _createClass(NotesList, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(React.Fragment, null, React.createElement("h1", null, "Study Notes"), React.createElement(NotesFilter, null), React.createElement("hr", null), React.createElement(NotesTable, null), React.createElement("hr", null), React.createElement(NotesAdd, null));
+    }
+  }]);
+
+  return NotesList;
+}(React.Component);
+
+var element = React.createElement(NotesList, null);
 ReactDOM.render(element, document.getElementById('contents'));

@@ -1,18 +1,39 @@
-class HelloWorld extends React.Component {
-  render(){
-    const continents = ['Africa', 'America', 'Australia', 'New Zealand', 'Europe', 'Asia']
-    const helloContinents = Array.from(continents, c => `Hello, ${c}!`)
-    const message = helloContinents.join(' ');
-    return(
-      <div title="Outer div"> 
-        <h2>Using React</h2>   
-        <h1>{message}</h1>  
-      </div>
-    )
+class NotesFilter extends React.Component {
+  render() {
+    return (
+      <div>This is a placeholder for the notes filter.</div>
+    );
   }
 }
 
+class NotesTable extends React.Component {
+  render() {
+    return (
+      <div>This is a placeholder for the notes table.</div>
+    );
+  }
+}
 
-const element = <HelloWorld/> 
-
+class NotesAdd extends React.Component {
+  render() {
+    return (
+      <div>This is a placeholder for the notes add.</div>
+    );
+  }
+}
+class NotesList extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <h1>Study Notes</h1>
+        <NotesFilter />
+        <hr />
+        <NotesTable />
+        <hr />
+        <NotesAdd />
+      </React.Fragment>
+    );
+  }
+}
+const element = <NotesList />
 ReactDOM.render(element, document.getElementById('contents'));
