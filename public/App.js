@@ -53,17 +53,59 @@ function (_React$Component2) {
   _createClass(NotesTable, [{
     key: "render",
     value: function render() {
-      return React.createElement("div", null, "This is a placeholder for the notes table.");
+      var rowStyle = {
+        border: "1px solid silver",
+        padding: 4
+      };
+      return React.createElement("table", null, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", {
+        style: rowStyle
+      }, "ID"), React.createElement("th", {
+        style: rowStyle
+      }, "Title"))), React.createElement("tbody", null, React.createElement(NoteRow, {
+        rowStyle: rowStyle,
+        note_id: 1,
+        note_title: "Switch to JavaScript within JSX"
+      }), " ", React.createElement(NoteRow, {
+        rowStyle: rowStyle,
+        note_id: 1,
+        note_title: "React's pholosophy with regard to inheritance"
+      }), " "));
     }
   }]);
 
   return NotesTable;
 }(React.Component);
 
-var NotesAdd =
+var NoteRow =
 /*#__PURE__*/
 function (_React$Component3) {
-  _inherits(NotesAdd, _React$Component3);
+  _inherits(NoteRow, _React$Component3);
+
+  function NoteRow() {
+    _classCallCheck(this, NoteRow);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(NoteRow).apply(this, arguments));
+  }
+
+  _createClass(NoteRow, [{
+    key: "render",
+    value: function render() {
+      var style = this.props.rowStyle;
+      return React.createElement("tr", null, React.createElement("td", {
+        style: style
+      }, this.props.note_id), React.createElement("td", {
+        style: style
+      }, this.props.note_title));
+    }
+  }]);
+
+  return NoteRow;
+}(React.Component);
+
+var NotesAdd =
+/*#__PURE__*/
+function (_React$Component4) {
+  _inherits(NotesAdd, _React$Component4);
 
   function NotesAdd() {
     _classCallCheck(this, NotesAdd);
@@ -83,8 +125,8 @@ function (_React$Component3) {
 
 var NotesList =
 /*#__PURE__*/
-function (_React$Component4) {
-  _inherits(NotesList, _React$Component4);
+function (_React$Component5) {
+  _inherits(NotesList, _React$Component5);
 
   function NotesList() {
     _classCallCheck(this, NotesList);
