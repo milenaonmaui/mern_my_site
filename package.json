@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/milenaonmaui/mern_my_site#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "nodemon": "^1.19.4"
   },
   "devDependencies": {
